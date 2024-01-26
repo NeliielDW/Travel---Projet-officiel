@@ -5,6 +5,8 @@
     --color-secondary: #15658e;
     --color-white: #ffffff;
     --color-dark: #222222;
+    --color-grey: #bcbcbc;
+    --color-red: #e00000;
 }
 
 * {
@@ -142,4 +144,82 @@ h1, h2, h3, h4 {
     padding: 1rem 2rem;
     border-radius: 30px;
     z-index: 999;
+}
+
+
+
+
+/* TRAVELS */
+
+.travels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4rem;
+    gap: 4rem;
+}
+
+.travels .card-travel {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 0px 2px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 0px 2px rgba(0,0,0,0);
+}
+
+.travels .card-travel .card-img img {
+    width: 300px;
+    height: 200px;
+}
+
+.travels .card-travel .card-text {
+    padding: .5rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.travels .card-travel .card-text .card-title p {
+    color: var(--color-grey);
+    font-size: 14px; 
+}
+
+.travels .card-travel .card-text .card-price {
+    text-align: end;
+}
+
+.travels .card-travel .card-text .card-price span {
+    color: var(--color-red);
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration:line-through;
+    margin-right: .3rem;
+}
+
+.travels .card-travel .card-text .card-price p {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.travels .card-travel .card-text .card-description p {
+    color: var(--color-grey);
+    font-size: 14px;
+    text-align: justify;
+}
+
+.travels .card-travel .card-text .card-button {
+    text-align: center;
+}
+
+.travels .card-travel .card-text .card-button button {
+    padding: .4rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
 }
